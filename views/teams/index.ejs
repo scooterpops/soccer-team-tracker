@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+<h2>Team List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>Team Name</th>
+      <th>League</th>
+      <th>Founding Year</th>
+      <th>Home Kit Colors</th>
+      <th>Year Founded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Write the line of EJS to iterate over teams using forEach -->
+      <tr>
+        <td><%= m.location %></td>
+        <td><%= m.teamName %></td>
+        <td><%= m.league %></td>
+        <td><%= m.foundingYear %></td>
+        <td><%= m.homeKitColors %></td>
+        <td><%= m.yearFounbded %></td>
+      </tr>
+    <!-- Close the forEach using EJS here -->
+  </tbody>
+</table>
+
+<%- include('../partials/header') %>
