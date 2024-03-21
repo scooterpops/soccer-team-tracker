@@ -1,0 +1,27 @@
+<%- include('../partials/header')%>
+
+<h2>Add a New Team</h2>
+<form action="/teams" method="POST">
+  <label>Location:
+    <input type="text" name="location">
+  </label><br>
+  <label>Team Name:
+    <input type="text" name="teamName">
+  </label><br>
+  <label>League:
+    <input type="text" name="league">
+  </label><br>
+  <label>Founding Year:
+    <input type="number" name="foundingYear">
+  </label><br>
+  <label>Home Kit Colors:
+    <input type="text" name="homeKitColors">
+  </label><br>
+  <label>Sponsor:
+    <input type="text" name="sponsor">
+  </label><br>
+  <button type="submit">Add Team</button>
+</form>
+
+
+<%- include('../partials/footer')%>
