@@ -2,7 +2,8 @@ const Team = require('../models/team')
 
 module.exports = {
     new: newTeam,
-    create
+    create,
+    index
 };
 
 function newTeam(req, res) {
@@ -23,3 +24,8 @@ async function create(req, res) {
         })
     }
 }   
+
+async function index(req, res) {
+    const teams = await Team.find({})
+    res.render('teams/index', { teams })
+}
