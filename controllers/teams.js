@@ -25,7 +25,7 @@ async function update(req,res) {
 }
 
 async function remove(req,res) {
-    await Team.findOneAndDelete(req.params.id)
+    await Team.findByIdAndDelete(req.params.id)
     res.redirect('/teams')
 }
 
