@@ -1,5 +1,7 @@
-# <Soccer Team Tracker>
-A
+# Soccer Team Tracker
+<div id="header" align="center">
+    <img src="https://i.imgur.com/royphBF.jpeg" width="200" height="100">
+</div>
 
 # Screenshots
 
