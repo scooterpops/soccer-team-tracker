@@ -12,11 +12,20 @@ router.get('/', teamsCtrl.index)
 // GET /teams/new
 router.get('/new', teamsCtrl.new)
 
+// GET /teams/:id
+router.get('/:id', teamsCtrl.show)
+
+// serves update page
+router.get('/:id/update', teamsCtrl.updatePage)
+
 // POST /teams
 router.post('/', teamsCtrl.create)
 
+// DELETE /team
+router.delete('/:id', teamsCtrl.remove)
 
-
+// UPDATE /team
+router.put('/:id', teamsCtrl.update)
 
 
 

@@ -1,0 +1,39 @@
+<%- include('../partials/header')%>
+
+<h2>Team Details</h2>
+<form action="/teams/<%= team.id%>?_method=PUT" method="POST">
+    <div class="form-group">
+    <label>Location:
+    <input type="text" name="location" value="<%= team.location %>">
+    </label><br>
+    </div>
+    <div class="form-group">
+    <label>Team Name:
+    <input type="text" name="teamName" value="<%= team.teamName %>">
+    </label><br>
+    </div>
+    <div class="form-group">
+    <label>League:
+    <input type="text" name="league" value="<%= team.league %>">
+    </label><br>
+    </div>
+    <div class="form-group">
+    <label>Founding Year:
+    <input type="number" name="foundingYear" value="<%= team.foundingYear %>">
+    </label><br>
+    </div>
+    <div class="form-group">
+    <label>Home Kit Colors:
+    <input type="text" name="homeKitColors" value="<%= team.homeKitColors %>">
+    </label><br>
+    </div>
+    <div class="form-group">
+    <label>Sponsor:
+    <input type="text" name="sponsor" value="<%= team.sponsor %>">
+    </label><br><br>
+    </div>
+    <button type="submit">Update Team</button>
+</form>
+
+
+<%- include('../partials/footer')%>

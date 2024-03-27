@@ -1,0 +1,38 @@
+<%- include('../partials/header') %>
+
+</section id="show page">
+<h2>Roster Details</h2>
+<!-- <div><strong>Team Name:</strong></div> -->
+<div>
+    <h3><%= team.teamName %></h3>
+</div>
+<br>
+<div style="display: inline-block;">
+    <form id="add-player-form" method="POST" action="/teams/<%= team._id %>/players">
+        <label>New Player:</label>
+        <input type="text" name="playerName">
+        <button type="submit">Add Player</button>
+    </form>
+    <br><br>
+
+    <% if (team.players.length) { %>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align:left">Player</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% team.players.forEach(function(p) { %>
+            <tr>
+                <td style="text-align: left"><%= p.playerName %></td>
+            </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <% } else { %>
+    <h5>No Players Yet</h5>
+    <% } %>
+</div>
+
+<%- include('../partials/footer') %>

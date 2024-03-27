@@ -23,7 +23,7 @@ th {
 }
 
 .form-group {
-  /* margin-bottom: 10px; */
+  margin-bottom: 5px;
   text-align: left;
 }
 
@@ -33,5 +33,10 @@ th {
 }
 
 .form-group input {
-  width: calc(100% - 60px);
+  width: calc(100% - 30px);
+}
+
+.add-player-form {
+  display: inline-block;
+  width: 274px;
 }

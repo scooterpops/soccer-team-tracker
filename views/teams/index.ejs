@@ -1,9 +1,5 @@
 <%- include('../partials/header') %>
 
-<style>
-
-</style>
-
 <h2>Team List</h2>
 <table>
   <thead>
@@ -25,6 +21,9 @@
         <td><%= t.foundingYear %></td>
         <td><%= t.homeKitColors %></td>
         <td><%= t.sponsor %></td>
+        <td><a href="/teams/<%= t._id %>">ROSTER</a></td>
+        <td><form action="/teams/<%= t._id %>/update" method="POST"><button type="submit">UPDATE</button></a></td>
+        <td><form action="/teams/<%= t._id %>?_method=DELETE" method="POST"><button type="submit">DELETE</button></td>
       </tr>
     <% }) %> 
   </tbody>
