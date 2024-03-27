@@ -1,14 +1,18 @@
-# Soccer Team Tracker
+# SOCCER TEAM TRACKER
 <div id="header" align="center">
     <img src="https://i.imgur.com/royphBF.jpeg" width="200" height="100">
 </div>
 
-# Screenshots
+## DESCRIPTION
+Track rosters in your local recreational and semi-professional soccer leagues.
+
+
+# SCREENSHOTS
 
 <img src="https://i.imgur.com/d7f5nt2.png">
 
 
-# Technologies Used
+# TECHNOLOGIES USED
 
 - Node.js
 - MongoDB
@@ -18,7 +22,7 @@
 - CSS
 
 
-# Next Steps
+# NEXT STEPS
 
 - Add Team Badges
 - Add Player Stats
