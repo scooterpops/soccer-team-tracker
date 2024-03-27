@@ -5,8 +5,8 @@
 
 # Screenshots
 
-<img src="">
-<img src="">
+<img src="https://i.imgur.com/d7f5nt2.png">
+
 
 # Technologies Used
 
