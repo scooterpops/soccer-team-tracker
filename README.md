@@ -26,3 +26,4 @@ Track rosters in your local recreational and semi-professional soccer leagues.
 
 - Add Team Badges
 - Add Player Stats
+- Update Theme to Dark Mode
